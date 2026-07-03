@@ -224,6 +224,13 @@
     padding:14px 16px; font-size:13px; color:var(--ink-700); margin-top:8px; line-height:1.6;
   }
   .tip-box i{color:var(--teal-600); font-size:18px; flex-shrink:0; margin-top:1px;}
+  .alert-box{
+    display:flex; gap:10px; background:var(--amber-100); border:1px solid var(--amber-500);
+    border-radius:var(--radius-m); padding:14px 16px; font-size:13px; color:var(--amber-800);
+    margin-bottom:18px; line-height:1.6;
+  }
+  .alert-box i{color:var(--amber-500); font-size:18px; flex-shrink:0; margin-top:1px;}
+  .loan-highlight{font-size:12.5px; color:var(--ink-500); line-height:1.5; margin-top:10px; padding-top:10px; border-top:1px solid var(--line);}
 
   /* ===== MID CTA ===== */
   .mid-cta{
@@ -365,16 +372,18 @@
     <div class="stat-row">
       <div class="stat-card"><div class="v">5000+</div><div class="l">Hồ sơ hỗ trợ mỗi tháng</div></div>
       <div class="stat-card"><div class="v">5 phút</div><div class="l">Thời gian duyệt trung bình</div></div>
-      <div class="stat-card"><div class="v">4</div><div class="l">Đối tác tài chính liên kết</div></div>
+      <div class="stat-card"><div class="v">6</div><div class="l">Đối tác tài chính liên kết</div></div>
     </div>
     <div class="disclosure-box">
-      <b>Vay Nhanh 24h</b> là nền tảng trung gian giới thiệu, liên kết với các công ty tài chính NiceCredit, Dong247, Binixo, Finami &mdash; không trực tiếp cho vay.
+      <b>Vay Nhanh 24h</b> là nền tảng trung gian giới thiệu, liên kết các giải pháp tài chính uy tín, hoàn toàn miễn phí dịch vụ. Chúng tôi không trực tiếp cho vay.
     </div>
     <div class="partner-row">
-      <div class="partner-chip">NiceCredit</div>
       <div class="partner-chip">Dong247</div>
       <div class="partner-chip">Binixo</div>
-      <div class="partner-chip">Finami</div>
+      <div class="partner-chip">NiceCredit</div>
+      <div class="partner-chip">VayMẹo</div>
+      <div class="partner-chip">MoneyCat 2</div>
+      <div class="partner-chip">VayVND</div>
     </div>
   </section>
 
@@ -437,68 +446,99 @@
 
   <section class="compare-section">
     <h2>So sánh & chọn gói vay</h2>
-    <p class="sub">4 đối tác uy tín &mdash; chọn gói phù hợp nhất với bạn</p>
+    <p class="sub">6 đối tác uy tín &mdash; chọn gói phù hợp nhất với bạn</p>
     <div class="rate-note">
       <i class="ti ti-info-circle"></i>
       Lãi suất thực tế phụ thuộc vào hồ sơ tín dụng và hạn mức vay &mdash; mức thấp nhất áp dụng cho khách hàng đủ điều kiện ưu đãi.
     </div>
 
-    <div class="loan-card featured">
-      <div class="loan-badge">Phổ biến nhất</div>
-      <div class="loan-top">
-        <div class="loan-name">NiceCredit</div>
-      </div>
-      <div class="loan-grid">
-        <div class="loan-field"><div class="lbl">Hạn mức vay</div><div class="val">1 &ndash; 100 triệu</div></div>
-        <div class="loan-field"><div class="lbl">Lãi suất/năm</div><div class="val">0% &ndash; 20%</div><div class="note">*Tùy hồ sơ và kỳ hạn</div></div>
-      </div>
-      <a href="#dangky" class="btn btn-primary btn-small">Đăng ký ngay</a>
-      <p class="loan-condition">Điều kiện: 21 &ndash; 60 tuổi</p>
+    <div class="alert-box">
+      <i class="ti ti-bulb"></i>
+      <span><b>Mẹo tăng tỷ lệ duyệt:</b> Chọn 1 gói vay phù hợp nhất với hạn mức và độ tuổi của bạn, chuẩn bị hồ sơ chính xác, rõ ràng &mdash; đây là cách giúp hồ sơ được xét duyệt nhanh và hiệu quả nhất.</span>
     </div>
 
-    <div class="loan-card">
+    <div class="loan-card featured">
+      <div class="loan-badge">Duyệt nhanh nhất</div>
       <div class="loan-top">
         <div class="loan-name">Dong247</div>
-        <div class="loan-tag">Duyệt nhanh</div>
       </div>
       <div class="loan-grid">
         <div class="loan-field"><div class="lbl">Hạn mức vay</div><div class="val">500K &ndash; 30 triệu</div></div>
         <div class="loan-field"><div class="lbl">Lãi suất/năm</div><div class="val">0% &ndash; 20%</div></div>
       </div>
-      <a href="#dangky" class="btn btn-ghost btn-small">Đăng ký ngay</a>
+      <a href="#link_dong247" class="btn btn-primary btn-small">Đăng ký ngay</a>
       <p class="loan-condition">Điều kiện: 18 &ndash; 60 tuổi</p>
+      <p class="loan-highlight">Hệ thống xét duyệt hồ sơ tự động, quy trình xử lý nhanh gọn. Giải ngân 24/7.</p>
     </div>
 
     <div class="loan-card">
       <div class="loan-top">
         <div class="loan-name">Binixo</div>
-        <div class="loan-tag">Dễ duyệt nhất</div>
+        <div class="loan-tag">Tỷ lệ duyệt 99%</div>
       </div>
       <div class="loan-grid">
         <div class="loan-field"><div class="lbl">Hạn mức vay</div><div class="val">500K &ndash; 20 triệu</div></div>
         <div class="loan-field"><div class="lbl">Lãi suất/năm</div><div class="val">0% &ndash; 18%</div></div>
       </div>
-      <a href="#dangky" class="btn btn-ghost btn-small">Đăng ký ngay</a>
+      <a href="#link_binixo" class="btn btn-ghost btn-small">Đăng ký ngay</a>
       <p class="loan-condition">Điều kiện: 20 &ndash; 60 tuổi</p>
+      <p class="loan-highlight">Tỷ lệ duyệt cao nhất hệ thống, hỗ trợ cả hồ sơ chưa hoàn thiện. Đăng ký hoàn toàn miễn phí.</p>
     </div>
 
     <div class="loan-card">
       <div class="loan-top">
-        <div class="loan-name">Finami</div>
-        <div class="loan-tag">Tỷ lệ duyệt cao</div>
+        <div class="loan-name">NiceCredit</div>
+        <div class="loan-tag">Phổ biến nhất</div>
       </div>
       <div class="loan-grid">
-        <div class="loan-field"><div class="lbl">Hạn mức vay</div><div class="val">500K &ndash; 20 triệu</div></div>
-        <div class="loan-field"><div class="lbl">Lãi suất/năm</div><div class="val">0% &ndash; 20%</div></div>
+        <div class="loan-field"><div class="lbl">Hạn mức vay</div><div class="val">1 &ndash; 100 triệu</div></div>
+        <div class="loan-field"><div class="lbl">Lãi suất/năm</div><div class="val">0% &ndash; 20%</div><div class="note">*Tùy hồ sơ và kỳ hạn</div></div>
       </div>
-      <a href="#dangky" class="btn btn-ghost btn-small">Đăng ký ngay</a>
-      <p class="loan-condition">Điều kiện: 20 &ndash; 60 tuổi</p>
+      <a href="#link_creditnice" class="btn btn-ghost btn-small">Đăng ký ngay</a>
+      <p class="loan-condition">Điều kiện: 21 &ndash; 60 tuổi</p>
+      <p class="loan-highlight">Thủ tục chỉ cần CCCD. Nhận tiền qua tài khoản ngân hàng chính chủ, minh bạch.</p>
     </div>
 
-    <div class="tip-box">
-      <i class="ti ti-bulb"></i>
-      <span><b>Mẹo nhỏ:</b> Chọn gói vay phù hợp với hạn mức bạn cần &mdash; hồ sơ rõ ràng, chính xác sẽ được duyệt nhanh hơn.</span>
+    <div class="loan-card">
+      <div class="loan-top">
+        <div class="loan-name">VayMẹo</div>
+        <div class="loan-tag">Đăng ký dễ</div>
+      </div>
+      <div class="loan-grid">
+        <div class="loan-field"><div class="lbl">Hạn mức vay</div><div class="val">1 &ndash; 15 triệu</div></div>
+        <div class="loan-field"><div class="lbl">Lãi suất/năm</div><div class="val">0% &ndash; 20%</div></div>
+      </div>
+      <a href="#link_vaymeo" class="btn btn-ghost btn-small">Đăng ký ngay</a>
+      <p class="loan-condition">Điều kiện: 20 &ndash; 60 tuổi</p>
+      <p class="loan-highlight">Đăng ký nhanh trong 3 phút. Xét duyệt hồ sơ hoàn toàn trực tuyến.</p>
+    </div>
 
+    <div class="loan-card">
+      <div class="loan-top">
+        <div class="loan-name">MoneyCat 2</div>
+        <div class="loan-tag">Ưu đãi 0% lãi</div>
+      </div>
+      <div class="loan-grid">
+        <div class="loan-field"><div class="lbl">Hạn mức vay</div><div class="val">1 &ndash; 10 triệu</div></div>
+        <div class="loan-field"><div class="lbl">Lãi suất/năm</div><div class="val">0% &ndash; 20%</div></div>
+      </div>
+      <a href="#link_moneycat2" class="btn btn-ghost btn-small">Đăng ký ngay</a>
+      <p class="loan-condition">Điều kiện: 20 &ndash; 60 tuổi</p>
+      <p class="loan-highlight">Ưu đãi 0% lãi suất & phí cho khoản vay đầu tiên. Thương hiệu uy tín, giải ngân nhanh.</p>
+    </div>
+
+    <div class="loan-card">
+      <div class="loan-top">
+        <div class="loan-name">VayVND</div>
+        <div class="loan-tag">Giải ngân nhanh</div>
+      </div>
+      <div class="loan-grid">
+        <div class="loan-field"><div class="lbl">Hạn mức vay</div><div class="val">1 &ndash; 15 triệu</div></div>
+        <div class="loan-field"><div class="lbl">Lãi suất/năm</div><div class="val">0% &ndash; 20%</div></div>
+      </div>
+      <a href="#link_vayvnd" class="btn btn-ghost btn-small">Đăng ký ngay</a>
+      <p class="loan-condition">Điều kiện: 22 &ndash; 60 tuổi</p>
+      <p class="loan-highlight">Top giải ngân nhanh của hệ thống. Thủ tục đơn giản, tỷ lệ duyệt hồ sơ mới cao.</p>
     </div>
   </section>
 
@@ -623,10 +663,12 @@
       </div>
       <div class="footer-col">
         <h4>Đối tác</h4>
-        <div>NiceCredit</div>
         <div>Dong247</div>
         <div>Binixo</div>
-        <div>Finami</div>
+        <div>NiceCredit</div>
+        <div>VayMẹo</div>
+        <div>MoneyCat 2</div>
+        <div>VayVND</div>
       </div>
     </div>
     <div class="footer-bottom">© 2026 vaynhanh24h.biz &mdash; Mọi quyền được bảo lưu</div>

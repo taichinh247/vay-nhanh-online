@@ -1,693 +1,467 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head> 
-<meta charset="UTF-8"> 
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vay Nhanh 24h — Vay nhanh, duyệt trong 5 phút</title>
+<title>Vay tiền online uy tín – So sánh 4 app vay nhanh, thủ tục đơn giản</title>
+<meta name="description" content="So sánh nhanh 4 app vay tiền mặt, vay tiền gấp uy tín – duyệt vay nhanh, thủ tục đơn giản, vay không thế chấp. Đối tác tài chính hoạt động hợp pháp tại Việt Nam.">
+<meta property="og:title" content="Vay tiền online uy tín – So sánh 4 app vay nhanh">
+<meta property="og:description" content="So sánh nhanh 4 app vay tiền mặt, vay tiền gấp uy tín – duyệt vay nhanh, thủ tục đơn giản.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --navy-900:#0B2545;
-    --navy-700:#13335C;
-    --navy-500:#28507F;
-    --teal-500:#0EA5A0;
-    --teal-600:#0C8A86;
-    --teal-100:#DCF3F1;
-    --cream-50:#FAF7F0;
-    --cream-100:#F2ECDD;
-    --amber-500:#E8A33D;
-    --amber-100:#FCEFD9;
-    --amber-800:#7A4A0F;
-    --ink-900:#15171C;
-    --ink-700:#2B2D33;
-    --ink-500:#5B5E68;
-    --ink-300:#9296A1;
-    --line:#E4E1D6;
+    --blue-900:#0B2559;
+    --blue-700:#154CB3;
+    --blue-600:#1A56DB;
+    --blue-50:#EEF3FF;
+    --orange-500:#F97316;
+    --orange-600:#EA6A0C;
+    --green-600:#16A34A;
+    --gray-900:#1A1F2B;
+    --gray-600:#5B6472;
+    --gray-300:#DCE1EA;
+    --gray-100:#F5F7FA;
     --white:#FFFFFF;
-    --radius-s:8px;
-    --radius-m:14px;
-    --radius-l:22px;
-    --shadow-card:0 1px 2px rgba(11,37,69,0.04), 0 8px 24px rgba(11,37,69,0.06);
-    --shadow-cta:0 10px 24px rgba(14,165,160,0.30);
-    --maxw:480px;
+    --radius:14px;
+    --shadow:0 4px 18px rgba(11,37,89,0.08);
+    --max-w:1080px;
   }
-  *{box-sizing:border-box; margin:0; padding:0;}
+  *{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
   body{
-    font-family:'Inter', sans-serif;
-    background:var(--cream-50);
-    color:var(--ink-700);
+    font-family:'Be Vietnam Pro',system-ui,-apple-system,sans-serif;
+    color:var(--gray-900);
+    background:var(--white);
     line-height:1.55;
-    -webkit-font-smoothing:antialiased;
+    padding-bottom:72px; /* chừa chỗ cho thanh CTA dính đáy trên mobile */
   }
-  .page{max-width:var(--maxw); margin:0 auto; background:var(--cream-50); position:relative; overflow:hidden;}
-  h1,h2,h3{font-family:'Fraunces', serif; font-weight:600; color:var(--navy-900); line-height:1.18; letter-spacing:-0.01em;}
-  .eyebrow{
-    font-family:'Inter', sans-serif; font-size:12px; font-weight:700; letter-spacing:0.08em;
-    text-transform:uppercase; color:var(--teal-600);
-  }
-  .eyebrow.on-dark{color:var(--teal-100);}
-  section{padding:48px 24px;}
+  @media(min-width:768px){ body{padding-bottom:0;} }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:var(--max-w);margin:0 auto;padding:0 20px;}
+  section{padding:56px 0;}
+  h1,h2,h3{font-weight:700;line-height:1.25;}
+  h2{font-size:26px;margin-bottom:10px;}
+  .eyebrow{color:var(--blue-600);font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px;}
+  .lead{color:var(--gray-600);font-size:16px;max-width:640px;margin-bottom:32px;}
+  .center{text-align:center;margin-left:auto;margin-right:auto;}
   .btn{
-    display:flex; align-items:center; justify-content:center; gap:8px;
-    width:100%; border:none; border-radius:var(--radius-m);
-    font-family:'Inter', sans-serif; font-weight:700; font-size:16px;
-    padding:17px 20px; cursor:pointer; text-decoration:none;
-    transition:transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:14px 28px;border-radius:999px;font-weight:700;font-size:15px;
+    text-decoration:none;border:none;cursor:pointer;transition:transform .15s ease, box-shadow .15s ease;
   }
-  .btn:active{transform:scale(0.97);}
-  .btn-primary{background:var(--teal-500); color:var(--white); box-shadow:var(--shadow-cta);}
-  .btn-primary:hover{background:var(--teal-600);}
-  .btn-ghost{background:transparent; color:var(--navy-900); border:1.5px solid var(--navy-900);}
-  .btn-ghost:hover{background:var(--navy-900); color:var(--white);}
-  .btn-small{padding:12px 16px; font-size:14px; border-radius:var(--radius-s);}
-  .caption{font-size:13px; color:var(--ink-500); text-align:center; margin-top:10px;}
-  .caption.on-dark{color:rgba(255,255,255,0.62);}
+  .btn-primary{background:var(--orange-500);color:var(--white);box-shadow:0 6px 16px rgba(249,115,22,.35);}
+  .btn-primary:hover{background:var(--orange-600);transform:translateY(-1px);}
+  .btn-outline{background:var(--white);color:var(--blue-700);border:1.5px solid var(--blue-600);}
+  .btn-block{width:100%;}
 
-  /* ===== STICKY BAR ===== */
-  .sticky-cta{
-    position:sticky; top:0; z-index:100;
-    background:var(--navy-900);
-    padding:10px 16px;
-    display:flex; align-items:center; justify-content:space-between; gap:10px;
-    border-bottom:1px solid rgba(255,255,255,0.08);
+  /* Header */
+  header{
+    position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--gray-300);
   }
-  .sticky-cta .brand{display:flex; align-items:center; gap:8px;}
-  .clock-badge{
-    width:30px; height:30px; border-radius:50%;
-    background:var(--teal-500); display:flex; align-items:center; justify-content:center;
-    color:white; font-size:15px; flex-shrink:0;
-  }
-  .sticky-cta .brand-name{color:white; font-weight:700; font-size:14px; font-family:'Inter',sans-serif;}
-  .sticky-cta .btn{width:auto; padding:9px 16px; font-size:13px; box-shadow:none;}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:var(--max-w);margin:0 auto;}
+  .logo{font-weight:800;font-size:19px;color:var(--blue-700);}
+  .logo span{color:var(--orange-500);}
+  .header-hotline{display:none;color:var(--gray-600);font-size:14px;}
+  .header-hotline strong{color:var(--blue-700);}
+  @media(min-width:640px){.header-hotline{display:block;}}
 
-  /* ===== HERO ===== */
+  /* Hero */
   .hero{
-    background:linear-gradient(180deg, var(--navy-900) 0%, var(--navy-700) 100%);
-    padding:40px 24px 0;
-    position:relative;
+    background:linear-gradient(180deg,var(--blue-50) 0%, var(--white) 100%);
+    padding:48px 0 40px;
   }
-  .hero-top{display:flex; align-items:center; justify-content:space-between; margin-bottom:28px;}
-  .hero-top .brand{display:flex; align-items:center; gap:9px;}
-  .hero-top .brand-name{color:white; font-weight:700; font-size:15px;}
-  .trust-pill{
-    display:flex; align-items:center; gap:6px;
-    background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.14);
-    border-radius:999px; padding:6px 12px; font-size:12px; color:rgba(255,255,255,0.85); font-weight:600;
+  .hero .wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px;}
+  .hero h1{font-size:32px;color:var(--blue-900);max-width:680px;}
+  .hero p.sub{color:var(--gray-600);font-size:16px;max-width:520px;}
+  .hero-features{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:12px;width:100%;max-width:520px;margin-top:8px;
   }
-  .trust-pill i{color:var(--teal-500); font-size:14px;}
-
-  .hero h1{
-    color:white; font-size:34px; margin-bottom:14px; font-weight:600;
+  .hero-feature{
+    display:flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--gray-300);
+    border-radius:10px;padding:10px 12px;font-size:13.5px;font-weight:600;color:var(--gray-900);
   }
-  .hero h1 em{font-style:normal; color:var(--teal-500);}
-  .hero-sub{color:rgba(255,255,255,0.72); font-size:15px; margin-bottom:24px; max-width:380px;}
-
-  .benefit-list{list-style:none; margin-bottom:28px; display:flex; flex-direction:column; gap:11px;}
-  .benefit-list li{display:flex; align-items:flex-start; gap:10px; color:rgba(255,255,255,0.92); font-size:14.5px; font-weight:500;}
-  .benefit-list i{color:var(--teal-500); font-size:18px; margin-top:1px; flex-shrink:0;}
-
-  .hero-cta-wrap{padding-bottom:32px;}
-
-  .hero-clock-art{
-    display:flex; justify-content:center; padding:8px 0 0;
-  }
-  .clock-face{
-    width:148px; height:148px; border-radius:50%;
-    border:3px solid rgba(255,255,255,0.16);
-    display:flex; align-items:center; justify-content:center;
-    position:relative;
-  }
-  .clock-face::before{
-    content:''; position:absolute; inset:10px; border-radius:50%;
-    border:1.5px dashed rgba(255,255,255,0.18);
-  }
-  .clock-inner{text-align:center;}
-  .clock-inner .num{font-family:'Fraunces',serif; font-size:46px; font-weight:700; color:white; line-height:1;}
-  .clock-inner .lbl{font-size:11px; color:rgba(255,255,255,0.6); text-transform:uppercase; letter-spacing:0.08em; font-weight:700; margin-top:2px;}
-  .hero-bottom-curve{height:28px; background:var(--cream-50); border-radius:28px 28px 0 0; margin-top:24px;}
-
-  /* ===== TRUST SECTION ===== */
-  .trust-section{padding-top:36px; padding-bottom:36px;}
-  .trust-section h2{font-size:22px; text-align:center; margin-bottom:8px;}
-  .trust-section .sub{text-align:center; color:var(--ink-500); font-size:14px; margin-bottom:24px;}
-  .stat-row{display:flex; gap:10px; margin-bottom:22px;}
-  .stat-card{flex:1; min-width:0;
-    background:white; border:1px solid var(--line); border-radius:var(--radius-m);
-    padding:16px 8px; text-align:center;
-  }
-  .stat-card .v{font-family:'Fraunces',serif; font-size:22px; font-weight:700; color:var(--navy-900);}
-  .stat-card .l{font-size:11px; color:var(--ink-500); margin-top:4px; line-height:1.3;}
-  .disclosure-box{
-    background:var(--cream-100); border-radius:var(--radius-m); padding:14px 16px;
-    font-size:13px; color:var(--ink-500); line-height:1.6; margin-bottom:20px;
-  }
-  .disclosure-box b{color:var(--navy-900);}
-  .partner-row{display:flex; align-items:center; justify-content:center; gap:14px; flex-wrap:wrap; margin-bottom:8px;}
-  .partner-chip{
-    border:1px solid var(--line); background:white; border-radius:var(--radius-s);
-    padding:8px 14px; font-size:12.5px; font-weight:700; color:var(--navy-700);
+  .hero-feature .dot{width:8px;height:8px;border-radius:50%;background:var(--green-600);flex:none;}
+  @media(min-width:640px){
+    .hero h1{font-size:40px;}
+    .hero-features{grid-template-columns:repeat(4,1fr);max-width:none;}
   }
 
-  /* ===== TESTIMONIAL (early) ===== */
-  .testi-section{background:white; padding:40px 24px;}
-  .testi-section h2{font-size:20px; margin-bottom:4px;}
-  .testi-section .sub{color:var(--ink-500); font-size:13.5px; margin-bottom:20px;}
-  .testi-card{
-    border:1px solid var(--line); border-radius:var(--radius-m); padding:18px;
-    margin-bottom:14px; background:var(--cream-50);
-  }
-  .testi-head{display:flex; align-items:center; gap:10px; margin-bottom:10px;}
-  .avatar{
-    width:38px; height:38px; border-radius:50%; background:var(--navy-500);
-    color:white; display:flex; align-items:center; justify-content:center;
-    font-weight:700; font-size:14px; font-family:'Inter',sans-serif; flex-shrink:0;
-  }
-  .testi-name{font-size:14px; font-weight:700; color:var(--navy-900);}
-  .testi-loc{font-size:12px; color:var(--ink-500);}
-  .stars{color:var(--amber-500); font-size:13px; letter-spacing:1px;}
-  .testi-text{font-size:14px; color:var(--ink-700); line-height:1.6;}
+  /* Trust / partner section */
+  .trust{background:var(--blue-900);color:var(--white);}
+  .trust h2{color:var(--white);}
+  .trust .lead{color:#C7D4EE;}
+  .trust-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:8px;}
+  .trust-item{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:20px;}
+  .trust-item h3{font-size:16px;margin-bottom:6px;}
+  .trust-item p{font-size:13.5px;color:#C7D4EE;}
+  @media(min-width:768px){.trust-grid{grid-template-columns:repeat(3,1fr);}}
 
-  /* ===== 3 STEPS ===== */
-  .steps-section{padding:44px 24px; background:var(--navy-900); position:relative;}
-  .steps-section h2{color:white; font-size:22px; text-align:center; margin-bottom:8px;}
-  .steps-section .sub{color:rgba(255,255,255,0.6); text-align:center; font-size:14px; margin-bottom:28px;}
-  .step-row{display:flex; flex-direction:column; gap:0;}
-  .step-item{display:flex; gap:16px; position:relative; padding-bottom:28px;}
-  .step-item:last-child{padding-bottom:0;}
-  .step-item::before{
-    content:''; position:absolute; left:19px; top:40px; bottom:0; width:1px;
-    background:rgba(255,255,255,0.15);
-  }
-  .step-item:last-child::before{display:none;}
-  .step-num{
-    width:40px; height:40px; border-radius:50%; background:var(--teal-500); color:white;
-    display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif;
-    font-weight:700; font-size:16px; flex-shrink:0; z-index:1;
-  }
-  .step-body h3{color:white; font-size:16px; margin-bottom:3px; font-family:'Inter',sans-serif; font-weight:600;}
-  .step-body p{color:rgba(255,255,255,0.6); font-size:13.5px;}
-
-  /* ===== COMPARISON ===== */
-  .compare-section{padding:44px 24px;}
-  .compare-section h2{font-size:22px; text-align:center; margin-bottom:8px;}
-  .compare-section .sub{text-align:center; color:var(--ink-500); font-size:14px; margin-bottom:10px;}
-  .rate-note{
-    display:flex; gap:8px; align-items:flex-start; background:var(--teal-100); border-radius:var(--radius-s);
-    padding:11px 13px; font-size:12.5px; color:var(--navy-700); margin-bottom:22px; line-height:1.5;
-  }
-  .rate-note i{color:var(--teal-600); font-size:15px; margin-top:1px; flex-shrink:0;}
-  .loan-card{
-    background:white; border:1px solid var(--line); border-radius:var(--radius-l);
-    padding:18px; margin-bottom:14px; position:relative;
-  }
-  .loan-card.featured{border:2px solid var(--teal-500);}
-  .loan-badge{
-    position:absolute; top:-10px; left:16px; background:var(--teal-500); color:white;
-    font-size:11px; font-weight:700; padding:4px 10px; border-radius:999px;
-  }
-  .loan-top{display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;}
-  .loan-name{font-family:'Fraunces',serif; font-weight:700; font-size:17px; color:var(--navy-900);}
-  .loan-tag{font-size:11px; font-weight:700; padding:4px 9px; border-radius:var(--radius-s); background:var(--amber-100); color:var(--amber-800);}
-  .loan-grid{display:flex; gap:12px; margin-bottom:14px;}
-  .loan-field{flex:1; min-width:0;}
-  .loan-field .lbl{font-size:11px; color:var(--ink-500); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:3px;}
-  .loan-field .val{font-size:14.5px; font-weight:700; color:var(--navy-900);}
-  .loan-field .note{font-size:11px; color:var(--ink-500); margin-top:2px;}
-  .loan-condition{font-size:12px; color:var(--ink-500); text-align:center; margin-top:10px;}
-
+  /* Comparison cards */
+  .compare{background:var(--gray-100);}
   .tip-box{
-    display:flex; gap:10px; background:var(--cream-100); border-radius:var(--radius-m);
-    padding:14px 16px; font-size:13px; color:var(--ink-700); margin-top:8px; line-height:1.6;
+    background:#FFF7ED;border:1px solid #FDE0C4;border-radius:10px;padding:12px 16px;
+    font-size:13.5px;color:#9A5D19;margin-bottom:28px;
   }
-  .tip-box i{color:var(--teal-600); font-size:18px; flex-shrink:0; margin-top:1px;}
-  .alert-box{
-    display:flex; gap:10px; background:var(--amber-100); border:1px solid var(--amber-500);
-    border-radius:var(--radius-m); padding:14px 16px; font-size:13px; color:var(--amber-800);
-    margin-bottom:18px; line-height:1.6;
+  .cards{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:720px){.cards{grid-template-columns:repeat(2,1fr);}}
+  .card{
+    background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);
+    padding:22px;display:flex;flex-direction:column;gap:12px;border:1px solid var(--gray-300);
+    position:relative;
   }
-  .alert-box i{color:var(--amber-500); font-size:18px; flex-shrink:0; margin-top:1px;}
-  .loan-highlight{font-size:12.5px; color:var(--ink-500); line-height:1.5; margin-top:10px; padding-top:10px; border-top:1px solid var(--line);}
+  .card .app-name{font-size:19px;font-weight:800;color:var(--blue-900);}
+  .card .tag{
+    display:inline-block;align-self:flex-start;background:var(--blue-50);color:var(--blue-700);
+    font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;
+  }
+  .card dl{display:grid;grid-template-columns:auto 1fr;gap:6px 10px;font-size:13.5px;}
+  .card dt{color:var(--gray-600);font-weight:600;white-space:nowrap;}
+  .card dd{color:var(--gray-900);}
+  .card .fit{font-size:13px;color:var(--gray-600);border-top:1px dashed var(--gray-300);padding-top:10px;margin-top:2px;}
+  .card .disclaimer{font-size:11.5px;color:#8A93A3;font-style:italic;}
 
-  /* ===== MID CTA ===== */
-  .mid-cta{
-    background:var(--teal-500); padding:32px 24px; text-align:center;
+  /* Steps */
+  .steps-grid{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:720px){.steps-grid{grid-template-columns:repeat(3,1fr);}}
+  .step{background:var(--white);border:1px solid var(--gray-300);border-radius:var(--radius);padding:20px;}
+  .step .num{
+    width:32px;height:32px;border-radius:50%;background:var(--blue-600);color:var(--white);
+    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;margin-bottom:12px;
   }
-  .mid-cta h3{color:white; font-size:19px; margin-bottom:14px; font-family:'Inter',sans-serif; font-weight:700;}
-  .mid-cta .btn-primary{background:white; color:var(--teal-600); box-shadow:none;}
-  .mid-cta .btn-primary:hover{background:var(--cream-50);}
+  .step h3{font-size:16px;margin-bottom:8px;}
+  .step ul{margin:0;padding-left:18px;color:var(--gray-600);font-size:13.5px;display:flex;flex-direction:column;gap:6px;}
 
-  /* ===== FAQ ===== */
-  .faq-section{padding:44px 24px; background:white;}
-  .faq-section h2{font-size:22px; text-align:center; margin-bottom:24px;}
-  .faq-item{border-bottom:1px solid var(--line);}
-  .faq-q{
-    display:flex; align-items:center; justify-content:space-between; gap:12px;
-    padding:16px 2px; cursor:pointer; font-weight:600; font-size:14.5px; color:var(--navy-900);
-    background:none; border:none; width:100%; text-align:left; font-family:'Inter',sans-serif;
-  }
-  .faq-q i{transition:transform .2s ease; color:var(--ink-500); font-size:18px; flex-shrink:0;}
-  .faq-item.open .faq-q i{transform:rotate(180deg); color:var(--teal-600);}
-  .faq-a{
-    max-height:0; overflow:hidden; transition:max-height .25s ease;
-  }
-  .faq-a-inner{padding:0 2px 16px; font-size:13.5px; color:var(--ink-500); line-height:1.6;}
-  .faq-item.open .faq-a{max-height:220px;}
+  /* Testimonials */
+  .testimonials{background:var(--blue-50);}
+  .test-grid{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:720px){.test-grid{grid-template-columns:repeat(3,1fr);}}
+  .test-card{background:var(--white);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);}
+  .test-card p.quote{font-size:13.5px;color:var(--gray-900);margin-bottom:14px;}
+  .test-card .who{font-size:13px;font-weight:700;color:var(--blue-700);}
+  .test-card .loc{font-size:12px;color:var(--gray-600);}
 
-  /* ===== ACCORDION GUIDE ===== */
-  .guide-section{padding:44px 24px;}
-  .guide-section h2{font-size:21px; text-align:center; margin-bottom:6px;}
-  .guide-section .sub{text-align:center; color:var(--ink-500); font-size:13.5px; margin-bottom:22px;}
-  .acc-item{
-    border:1px solid var(--line); border-radius:var(--radius-m); margin-bottom:10px; overflow:hidden; background:white;
+  /* FAQ */
+  .faq details{
+    background:var(--white);border:1px solid var(--gray-300);border-radius:10px;
+    padding:14px 16px;margin-bottom:10px;
   }
-  .acc-head{
-    display:flex; align-items:center; gap:12px; padding:14px 16px; cursor:pointer; width:100%;
-    background:none; border:none; text-align:left; font-family:'Inter',sans-serif;
-  }
-  .acc-icon{
-    width:32px; height:32px; border-radius:50%; background:var(--teal-100); color:var(--teal-600);
-    display:flex; align-items:center; justify-content:center; font-size:15px; flex-shrink:0;
-  }
-  .acc-icon.warn{background:var(--amber-100); color:var(--amber-800);}
-  .acc-title{font-weight:700; font-size:14px; color:var(--navy-900); flex:1;}
-  .acc-head .ti-chevron-down{color:var(--ink-500); font-size:18px; transition:transform .2s ease;}
-  .acc-item.open .acc-head .ti-chevron-down{transform:rotate(180deg);}
-  .acc-body{max-height:0; overflow:hidden; transition:max-height .25s ease;}
-  .acc-item.open .acc-body{max-height:260px;}
-  .acc-body-inner{padding:0 16px 16px 60px;}
-  .acc-body-inner li{font-size:13px; color:var(--ink-700); margin-bottom:7px; line-height:1.5; list-style:none; position:relative; padding-left:16px;}
-  .acc-body-inner li::before{content:''; position:absolute; left:0; top:7px; width:5px; height:5px; border-radius:50%; background:var(--teal-500);}
+  .faq summary{font-weight:700;font-size:14.5px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:"+";font-size:20px;color:var(--blue-600);flex:none;}
+  .faq details[open] summary::after{content:"–";}
+  .faq p{font-size:13.5px;color:var(--gray-600);margin-top:10px;}
 
-  /* ===== FINAL CTA ===== */
-  .final-section{
-    background:linear-gradient(180deg, var(--navy-700) 0%, var(--navy-900) 100%);
-    padding:44px 24px; text-align:center;
-  }
-  .final-clock{display:flex; justify-content:center; margin-bottom:20px;}
-  .final-section h2{color:white; font-size:23px; margin-bottom:10px;}
-  .final-section p{color:rgba(255,255,255,0.65); font-size:14px; margin-bottom:24px; max-width:340px; margin-left:auto; margin-right:auto;}
+  /* CTA + community */
+  .cta-final{background:var(--blue-900);color:var(--white);text-align:center;}
+  .cta-final h2{color:var(--white);}
+  .cta-final p{color:#C7D4EE;margin-bottom:24px;}
+  .community{display:flex;flex-direction:column;gap:12px;max-width:360px;margin:24px auto 0;}
+  @media(min-width:520px){.community{flex-direction:row;max-width:none;justify-content:center;}}
 
-  /* ===== COMMUNITY ===== */
-  .community-section{padding:40px 24px; text-align:center;}
-  .community-section h2{font-size:19px; margin-bottom:6px;}
-  .community-section .sub{color:var(--ink-500); font-size:13.5px; margin-bottom:20px;}
-  .group-btn{
-    display:flex; align-items:center; gap:12px; background:white; border:1px solid var(--line);
-    border-radius:var(--radius-m); padding:14px 16px; margin-bottom:10px; text-decoration:none;
-    color:var(--navy-900); font-weight:700; font-size:14.5px;
-  }
-  .group-icon{width:34px; height:34px; border-radius:var(--radius-s); display:flex; align-items:center; justify-content:center; color:white; font-size:17px; flex-shrink:0;}
-  .group-icon.zalo{background:#0068FF;}
-  .group-icon.tele{background:#27A7E7;}
-  .group-btn .ti-arrow-right{margin-left:auto; color:var(--ink-300);}
+  footer{background:#0A1D42;color:#9FB0D4;padding:36px 0 24px;font-size:13px;}
+  .footer-grid{display:grid;grid-template-columns:1fr;gap:24px;margin-bottom:24px;}
+  @media(min-width:720px){.footer-grid{grid-template-columns:repeat(4,1fr);}}
+  footer h4{color:var(--white);font-size:14px;margin-bottom:10px;}
+  footer ul{list-style:none;display:flex;flex-direction:column;gap:6px;}
+  .footer-note{border-top:1px solid rgba(255,255,255,.1);padding-top:16px;color:#7386AD;font-size:12px;line-height:1.6;}
 
-  /* ===== FOOTER ===== */
-  footer{background:var(--navy-900); padding:36px 24px 28px; color:rgba(255,255,255,0.6); font-size:13px;}
-  .footer-disclosure{
-    background:rgba(255,255,255,0.06); border-radius:var(--radius-m); padding:14px 16px;
-    font-size:12.5px; line-height:1.6; margin-bottom:24px; color:rgba(255,255,255,0.7);
+  /* Thanh CTA dính đáy — chỉ hiện trên mobile, nơi chiếm gần như 100% traffic từ chatbot Facebook */
+  .mobile-cta-bar{
+    position:fixed;left:0;right:0;bottom:0;z-index:70;
+    display:flex;align-items:center;gap:10px;
+    background:var(--white);border-top:1px solid var(--gray-300);
+    padding:10px 16px;padding-bottom:calc(10px + env(safe-area-inset-bottom));
+    box-shadow:0 -6px 20px rgba(11,37,89,.10);
   }
-  .footer-grid{display:flex; gap:24px; margin-bottom:24px;}
-  .footer-col{flex:1; min-width:0;}
-  .footer-col h4{color:white; font-size:13px; margin-bottom:12px; font-family:'Inter',sans-serif; font-weight:700;}
-  .footer-col div{margin-bottom:8px; font-size:12.5px;}
-  .footer-contact div{display:flex; align-items:flex-start; gap:8px; margin-bottom:10px; font-size:12.5px;}
-  .footer-contact i{font-size:14px; margin-top:1px; color:var(--teal-500); flex-shrink:0;}
-  .footer-bottom{border-top:1px solid rgba(255,255,255,0.1); padding-top:16px; text-align:center; font-size:11.5px; color:rgba(255,255,255,0.4);}
-
-  @media (max-width:360px){
-    .hero h1{font-size:29px;}
+  .mobile-cta-call{
+    flex:none;width:46px;height:46px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    background:var(--blue-50);color:var(--blue-700);font-size:20px;text-decoration:none;
   }
+  .mobile-cta-bar .btn{flex:1;padding:13px 16px;}
+  @media(min-width:768px){.mobile-cta-bar{display:none;}}
 </style>
 </head>
 <body>
-<div class="page">
 
-  <div class="sticky-cta">
-    <div class="brand">
-      <div class="clock-badge"><i class="ti ti-clock-filled" style="font-size:14px;"></i></div>
-      <span class="brand-name">Vay Nhanh 24h</span>
-    </div>
-    <a href="#sosanh" class="btn btn-primary">Đăng Ký Miễn Phí Ngay</a>
+<header>
+  <div class="header-inner">
+    <div class="logo">VayNhanh<span>24h</span></div>
+    <div class="header-hotline">Hotline hỗ trợ: <strong>0329 910 711</strong></div>
+    <a href="#so-sanh" class="btn btn-primary">Xem gói vay</a>
   </div>
+</header>
 
-  <section class="hero">
-    <h1>Bạn cần tiền gấp?<br>Duyệt ngay trong <em>5 phút.</em></h1>
-    <p class="hero-sub">Chỉ cần CCCD, không cần thế chấp. Hồ sơ rõ ràng — tiền về nhanh, đúng hẹn.</p>
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <h1>Vay tiền online uy tín – Thủ tục đơn giản, duyệt vay nhanh</h1>
+    <p class="sub">So sánh nhanh các app vay tiền mặt, vay tiền gấp phù hợp với hồ sơ của bạn — không cần thế chấp, đăng ký hoàn toàn online.</p>
+    <a href="#so-sanh" class="btn btn-primary">ĐĂNG KÝ MIỄN PHÍ</a>
+    <div class="hero-features">
+      <div class="hero-feature"><span class="dot"></span>Chỉ cần CCCD</div>
+      <div class="hero-feature"><span class="dot"></span>Không cần bảng lương</div>
+      <div class="hero-feature"><span class="dot"></span>Lãi suất minh bạch</div>
+      <div class="hero-feature"><span class="dot"></span>Giải ngân trong ngày</div>
+    </div>
+  </div>
+</section>
 
-    <ul class="benefit-list">
-   <li><span style="color: #2de2b4; margin-right: 10px; font-weight: bold;">✔</span> Chỉ cần CCCD, không cần chứng minh thu nhập</li>
-   <li><span style="color: #2de2b4; margin-right: 10px; font-weight: bold;">✔</span> Duyệt hồ sơ trong 5 phút, giải ngân trong ngày</li>
-   <li><span style="color: #2de2b4; margin-right: 10px; font-weight: bold;">✔</span> Lãi suất rõ ràng từ 0%&ndash;20%/năm, không phí ẩn</li>
-   <li><span style="color: #2de2b4; margin-right: 10px; font-weight: bold;">✔</span> Liên kết đối tác tài chính được cấp phép hoạt động</li>    
-    </ul>
-
-    <div class="hero-clock-art">
-      <div class="clock-face">
-        <div class="clock-inner">
-          <div class="num">5</div>
-          <div class="lbl">phút duyệt</div>
-        </div>
+<!-- ============ TRUST / ĐỐI TÁC (đã bỏ số liệu 98%/100%/5000+ không kiểm chứng được) ============ -->
+<section class="trust">
+  <div class="wrap">
+    <p class="eyebrow center">Đối tác tài chính</p>
+    <h2 class="center">Đối tác là các app vay hoạt động hợp pháp tại Việt Nam</h2>
+    <p class="lead center">Được tin tưởng bởi hàng ngàn khách hàng trên toàn quốc.</p>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <h3>Pháp lý rõ ràng</h3>
+        <p>Các app đối tác đều hoạt động hợp pháp tại Việt Nam, có điều khoản và chính sách công khai.</p>
+      </div>
+      <div class="trust-item">
+        <h3>Bảo mật thông tin</h3>
+        <p>Thông tin đăng ký được bảo mật theo chính sách riêng của từng app đối tác.</p>
+      </div>
+      <div class="trust-item">
+        <h3>Hỗ trợ 24/7</h3>
+        <p>Có nhóm Zalo, Telegram hỗ trợ nếu bạn gặp lỗi trong quá trình đăng ký.</p>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="hero-cta-wrap" style="margin-top:24px;">
-      <a href="#sosanh" class="btn btn-primary"><i class="ti ti-bolt"></i> ĐĂNG KÝ MIỄN PHÍ NGAY </a>
-      <p class="caption on-dark">Hơn 5.000 người đã được duyệt vay trong tháng này</p>
-    </div>
+<!-- ============ SO SÁNH & CHỌN GÓI VAY ============ -->
+<section class="compare" id="so-sanh">
+  <div class="wrap">
+    <p class="eyebrow">So sánh gói vay</p>
+    <h2>So sánh nhanh — chọn gói vay tiền online phù hợp với hồ sơ của bạn</h2>
+    <p class="lead">Mỗi app có hạn mức, lãi suất và điều kiện xét duyệt khác nhau. Xem bảng dưới để chọn gói vay nhanh phù hợp nhất với nhu cầu và hồ sơ của bạn.</p>
 
-    <div class="hero-bottom-curve"></div>
-  </section>
+    <div class="tip-box">💡 Mẹo nhỏ: nếu chưa chắc hồ sơ của mình hợp với app nào, có thể thử đăng ký ở app phù hợp nhất trước — mỗi app có tiêu chí xét duyệt riêng.</div>
 
-  <section class="trust-section">
-    <h2>Được tin tưởng trên toàn quốc</h2>
-    <p class="sub">Số liệu cập nhật theo dữ liệu vận hành tháng này</p>
-    <div class="stat-row">
-      <div class="stat-card"><div class="v">5000+</div><div class="l">Hồ sơ hỗ trợ mỗi tháng</div></div>
-      <div class="stat-card"><div class="v">5 phút</div><div class="l">Thời gian duyệt trung bình</div></div>
-      <div class="stat-card"><div class="v">6</div><div class="l">Đối tác tài chính liên kết</div></div>
-    </div>
-    <div class="disclosure-box">
-      <b>Vay Nhanh 24h</b> là nền tảng trung gian giới thiệu, liên kết các giải pháp tài chính uy tín, hoàn toàn miễn phí dịch vụ. Chúng tôi không trực tiếp cho vay.
-    </div>
-    <div class="partner-row">
-      <div class="partner-chip">Dong247</div>
-      <div class="partner-chip">Binixo</div>
-      <div class="partner-chip">NiceCredit</div>
-      <div class="partner-chip">Vaymeo</div>
-      <div class="partner-chip">MoneyVeo</div>
-      <div class="partner-chip">VayVND</div>
-    </div>
-  </section>
-
-  <section class="testi-section">
-    <h2>Người thật, trải nghiệm thật</h2>
-    <p class="sub">Chia sẻ từ khách hàng đã được hỗ trợ vay thành công</p>
-
-    <div class="testi-card">
-      <div class="testi-head">
-        <div class="avatar">L</div>
-        <div>
-          <div class="testi-name">Nguyễn Thị Lan, 24 tuổi</div>
-          <div class="testi-loc">Nhân viên văn phòng</div>
-        </div>
+    <div class="cards">
+      <!-- Creditnice -->
+      <div class="card">
+        <span class="tag">Hồ sơ sạch · Vay nhỏ</span>
+        <div class="app-name">Creditnice</div>
+        <dl>
+          <dt>Hạn mức</dt><dd>500.000 – 100.000.000đ</dd>
+          <dt>Lãi suất</dt><dd>0% cho khoản vay đầu ≤10 triệu, sau đó tối đa 50%/năm</dd>
+          <dt>Điều kiện</dt><dd>Từ 21 tuổi, CCCD + thẻ ngân hàng</dd>
+        </dl>
+        <p class="fit">Phù hợp: hồ sơ sạch, vay tiền gấp số tiền nhỏ, chưa từng vay app nào.</p>
+        <a href="https://go.dinos.click/click?a=1326&o=990" target="_blank" rel="noopener sponsored" class="btn btn-primary btn-block">XEM CHI TIẾT &amp; ĐĂNG KÝ</a>
       </div>
-      <div class="stars">★★★★★</div>
-      <p class="testi-text" style="margin-top:8px;">"Mình vay ở NiceCredit vì cần gấp vài triệu để xoay công việc. Điền form buổi sáng thì một lúc sau có tin nhắn duyệt luôn, rất ưng!"</p>
-    </div>
 
-    <div class="testi-card">
-      <div class="testi-head">
-        <div class="avatar">H</div>
-        <div>
-          <div class="testi-name">Trần Văn Hùng, 28 tuổi</div>
-          <div class="testi-loc">Bình Dương &middot; Lao động tự do</div>
-        </div>
+      <!-- Dong247 -->
+      <div class="card">
+        <span class="tag">Nền tảng so sánh</span>
+        <div class="app-name">Dong247</div>
+        <dl>
+          <dt>Mô hình</dt><dd>So sánh, ghép với hơn 25 đối tác cho vay</dd>
+          <dt>Điều kiện</dt><dd>20–60 tuổi, có việc làm ổn định</dd>
+        </dl>
+        <p class="fit">Phù hợp: hồ sơ sạch nhưng chưa rõ nên vay hạn mức bao nhiêu, muốn so sánh nhiều lựa chọn cùng lúc.</p>
+        <p class="disclaimer">Dong247 là nền tảng kết nối nhiều đối tác cho vay, không phải đơn vị cho vay trực tiếp.</p>
+        <a href="https://tracking.mobivision.vn/click?a=360&o=577" target="_blank" rel="noopener sponsored" class="btn btn-primary btn-block">XEM CHI TIẾT &amp; ĐĂNG KÝ</a>
       </div>
-      <div class="stars">★★★★★</div>
-      <p class="testi-text" style="margin-top:8px;">"Làm tự do nên mấy chỗ khác không cho vay, thử ở đây thì hơn 1 tiếng có kết quả luôn. Tiền về nhanh, không phiền phức gì hết."</p>
-    </div>
-  </section>
 
-  <section class="steps-section">
-    <h2>3 bước nhận tiền</h2>
-    <p class="sub">Thủ tục tinh gọn, giải ngân trong ngày</p>
-    <div class="step-row">
-      <div class="step-item">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Chọn gói vay phù hợp</h3>
-          <p>Xem hạn mức và lãi suất phù hợp với nhu cầu của bạn</p>
-        </div>
+      <!-- Money Veo -->
+      <div class="card">
+        <span class="tag">Hồ sơ sạch · Vay vừa</span>
+        <div class="app-name">Money Veo</div>
+        <dl>
+          <dt>Hạn mức</dt><dd>500.000 – 30.000.000đ</dd>
+          <dt>Lãi suất</dt><dd>18,25%/năm</dd>
+          <dt>Điều kiện</dt><dd>20–80 tuổi, CCCD + số điện thoại</dd>
+        </dl>
+        <p class="fit">Phù hợp: vay tiền mặt hạn mức trung bình, cần duyệt vay nhanh, hồ sơ sạch.</p>
+        <a href="https://go.dinos.click/click?a=1326&o=663" target="_blank" rel="noopener sponsored" class="btn btn-primary btn-block">XEM CHI TIẾT &amp; ĐĂNG KÝ</a>
       </div>
-      <div class="step-item">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>Điền thông tin chính xác & xác minh</h3>
-          <p>Chỉ cần CCCD và số điện thoại chính chủ</p>
-        </div>
-      </div>
-      <div class="step-item">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>Nhận kết quả & giải ngân</h3>
-          <p>Tiền về tài khoản ngay sau khi hồ sơ được duyệt</p>
-        </div>
+
+      <!-- Binixo -->
+      <div class="card">
+        <span class="tag">Đang có khoản vay khác / từng bị từ chối</span>
+        <div class="app-name">Binixo</div>
+        <dl>
+          <dt>Hạn mức</dt><dd>1.000.000 – 50.000.000đ</dd>
+          <dt>Lãi suất</dt><dd>Theo từng đối tác trong hệ thống (không cố định)</dd>
+          <dt>Điều kiện</dt><dd>18–70 tuổi</dd>
+        </dl>
+        <p class="fit">Phù hợp: hồ sơ đang có khoản vay khác hoặc từng bị từ chối ở nơi khác — tăng khả năng tìm được nơi phù hợp thay vì đăng ký từng app riêng lẻ.</p>
+        <p class="disclaimer">Binixo là nền tảng so sánh, ghép với nhiều đối tác cho vay khác nhau, không phải đơn vị cho vay trực tiếp.</p>
+        <a href="https://tracking.mobivision.vn/click?a=360&o=105" target="_blank" rel="noopener sponsored" class="btn btn-primary btn-block">XEM CHI TIẾT &amp; ĐĂNG KÝ</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="compare-section" id="sosanh">
-    <h2>So sánh & chọn gói vay</h2>
-    <p class="sub">4 đối tác uy tín &mdash; chọn các gói vay phù hợp với bạn</p>
-    <div class="rate-note">
-      <i class="ti ti-info-circle"></i>
-      Lãi suất thực tế phụ thuộc vào hồ sơ tín dụng và hạn mức vay &mdash; mức thấp nhất áp dụng cho khách hàng đủ điều kiện ưu đãi.
+<!-- ============ HƯỚNG DẪN 3 BƯỚC (đã bỏ phần hướng dẫn khai thông tin sai lệch) ============ -->
+<section id="huong-dan">
+  <div class="wrap">
+    <p class="eyebrow">Cẩm nang</p>
+    <h2>Hướng dẫn 3 bước vay thành công</h2>
+    <p class="lead">Áp dụng đúng checklist này để hồ sơ của bạn được xử lý nhanh và chính xác nhất.</p>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Chuẩn bị thông tin chính xác</h3>
+        <ul>
+          <li>Dùng số điện thoại chính chủ, không dùng SIM mới hay SIM rác</li>
+          <li>Khai đúng thông tin cá nhân và công việc hiện tại</li>
+          <li>Không click vào quảng cáo mời vay ở email hoặc tin nhắn lạ</li>
+        </ul>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Chuẩn bị ảnh hồ sơ rõ nét</h3>
+        <ul>
+          <li>Ảnh CCCD rõ mặt, đủ sáng, không mờ/chói</li>
+          <li>Ảnh chân dung rõ nét, không cắt góc</li>
+          <li>Tránh chụp lại qua màn hình hoặc dùng ảnh cũ</li>
+        </ul>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Đăng ký đúng nơi, an toàn</h3>
+        <ul>
+          <li>Đăng ký trực tiếp qua nút bấm trên trang này để tránh trang giả mạo</li>
+          <li>Không tự tải app qua link lạ trên CH Play/App Store hoặc kết quả tìm kiếm Google</li>
+          <li>Nếu gặp lỗi, liên hệ nhóm Zalo/Telegram hỗ trợ ở cuối trang</li>
+        </ul>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="alert-box">
-      <i class="ti ti-bulb"></i>
-      <span><b>Mẹo tăng tỷ lệ duyệt:</b> Có thể đăng ký cả 4 apps để tăng tỷ lệ được duyệt cao hơn</span>
+<!-- ============ TESTIMONIAL ============ -->
+<section class="testimonials">
+  <div class="wrap">
+    <p class="eyebrow">Chia sẻ từ khách hàng</p>
+    <h2>Người thật – trải nghiệm thật</h2>
+    <p class="lead">Một số chia sẻ từ khách hàng đã sử dụng dịch vụ.</p>
+    <div class="test-grid">
+      <div class="test-card">
+        <p class="quote">"Mình cần gấp vài triệu để xoay công việc. Điền form buổi sáng thì đến trưa có kết quả, khá nhanh."</p>
+        <div class="who">Nguyễn Thị Lan, 24 tuổi</div>
+        <div class="loc">TP.HCM</div>
+      </div>
+      <div class="test-card">
+        <p class="quote">"Làm tự do nên vài chỗ khác không cho vay, thử ở đây thì hơn 1 tiếng có kết quả. Tiền về nhanh, không phiền phức."</p>
+        <div class="who">Trần Văn Hùng, 28 tuổi</div>
+        <div class="loc">Bình Dương</div>
+      </div>
+      <div class="test-card">
+        <p class="quote">"Ban đầu hơi lo vì từng có khoản vay khác chưa tất toán, nhưng vẫn được hỗ trợ xét duyệt. Điền form xong chưa đến 1 giờ đã có kết quả."</p>
+        <div class="who">Phạm Hồng Nhung, 31 tuổi</div>
+        <div class="loc">Đà Nẵng</div>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="loan-card featured">
-      <div class="loan-badge">Duyệt nhanh nhất</div>
-      <div class="loan-top">
-        <div class="loan-name">Dong247</div>
-      </div>
-      <div class="loan-grid">
-        <div class="loan-field"><div class="lbl">Hạn mức vay</div><div class="val">500K &ndash; 30 triệu</div></div>
-        <div class="loan-field"><div class="lbl">Lãi suất/năm</div><div class="val">0% &ndash; 20%</div></div>
-      </div>
-      <a href="https://go.dinos.click/click?a=1326&o=302" class="btn btn-primary btn-small">Đăng ký ngay</a>
-      <p class="loan-condition">Điều kiện: 18 &ndash; 60 tuổi</p>
-      <p class="loan-highlight">Hệ thống xét duyệt hồ sơ tự động, quy trình xử lý nhanh gọn. Giải ngân 24/7.</p>
-    </div>
-
-    <div class="loan-card">
-      <div class="loan-top">
-        <div class="loan-name">Binixo</div>
-        <div class="loan-tag">Tỷ lệ duyệt 99%</div>
-      </div>
-      <div class="loan-grid">
-        <div class="loan-field"><div class="lbl">Hạn mức vay</div><div class="val">500K &ndash; 20 triệu</div></div>
-        <div class="loan-field"><div class="lbl">Lãi suất/năm</div><div class="val">0% &ndash; 18%</div></div>
-      </div>
-      <a href="https://tracking.mobivision.vn/click?a=360&o=105" class="btn btn-ghost btn-small">Đăng ký ngay</a>
-      <p class="loan-condition">Điều kiện: 20 &ndash; 60 tuổi</p>
-      <p class="loan-highlight">Tỷ lệ duyệt cao nhất hệ thống, hỗ trợ cả hồ sơ chưa hoàn thiện. Đăng ký hoàn toàn miễn phí.</p>
-    </div>
-
-    <div class="loan-card">
-      <div class="loan-top">
-        <div class="loan-name">NiceCredit</div>
-        <div class="loan-tag">Phổ biến nhất</div>
-      </div>
-      <div class="loan-grid">
-        <div class="loan-field"><div class="lbl">Hạn mức vay</div><div class="val">1 &ndash; 100 triệu</div></div>
-        <div class="loan-field"><div class="lbl">Lãi suất/năm</div><div class="val">0% &ndash; 20%</div><div class="note">*Tùy hồ sơ và kỳ hạn</div></div>
-      </div>
-      <a href="https://go.dinos.click/click?a=1326&o=990" class="btn btn-ghost btn-small">Đăng ký ngay</a>
-      <p class="loan-condition">Điều kiện: 21 &ndash; 60 tuổi</p>
-      <p class="loan-highlight">Thủ tục chỉ cần CCCD. Nhận tiền qua tài khoản ngân hàng chính chủ, minh bạch.</p>
-    </div>
-
-    <div class="loan-card">
-      <div class="loan-top">
-        <div class="loan-name">Vaymeo</div>
-        <div class="loan-tag">Đăng ký dễ</div>
-      </div>
-      <div class="loan-grid">
-        <div class="loan-field"><div class="lbl">Hạn mức vay</div><div class="val">1 &ndash; 30 triệu</div></div>
-        <div class="loan-field"><div class="lbl">Lãi suất/năm</div><div class="val">0% &ndash; 20%</div></div>
-      </div>
-      <a href="https://go.dinos.click/click?a=1326&o=1185" class="btn btn-ghost btn-small">Đăng ký ngay</a>
-      <p class="loan-condition">Điều kiện: 20 &ndash; 60 tuổi</p>
-      <p class="loan-highlight">Đăng ký nhanh trong 3 phút. Xét duyệt hồ sơ hoàn toàn trực tuyến.</p>
-    </div>
-
-    <div class="loan-card">
-      <div class="loan-top">
-        <div class="loan-name">Moneyveo</div>
-        <div class="loan-tag">Ưu đãi 0% lãi</div>
-      </div>
-      <div class="loan-grid">
-        <div class="loan-field"><div class="lbl">Hạn mức vay</div><div class="val">500k &ndash; 30 triệu</div></div>
-        <div class="loan-field"><div class="lbl">Lãi suất/năm</div><div class="val">0% &ndash; 18.25%</div></div>
-      </div>
-      <a href="https://tracking.mobivision.vn/click?a=360&o=161" class="btn btn-ghost btn-small">Đăng ký ngay</a>
-      <p class="loan-condition">Điều kiện: 20 &ndash; 60 tuổi</p>
-      <p class="loan-highlight">Ưu đãi 0% lãi suất & phí cho khoản vay đầu tiên. Thương hiệu uy tín, giải ngân nhanh.</p>
-    </div>
-
-    <div class="loan-card">
-      <div class="loan-top">
-        <div class="loan-name">VayVND</div>
-        <div class="loan-tag">Giải ngân nhanh</div>
-      </div>
-      <div class="loan-grid">
-        <div class="loan-field"><div class="lbl">Hạn mức vay</div><div class="val">1 &ndash; 15 triệu</div></div>
-        <div class="loan-field"><div class="lbl">Lãi suất/năm</div><div class="val">0% &ndash; 20%</div></div>
-      </div>
-      <a href="https://go.dinos.click/click?a=1326&o=277" class="btn btn-ghost btn-small">Đăng ký ngay</a>
-      <p class="loan-condition">Điều kiện: 22 &ndash; 60 tuổi</p>
-      <p class="loan-highlight">Top giải ngân nhanh của hệ thống. Thủ tục đơn giản, tỷ lệ duyệt hồ sơ mới cao.</p>
-    </div>
-  </section>
-
-  <section class="faq-section">
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <p class="eyebrow">Giải đáp</p>
     <h2>Câu hỏi thường gặp</h2>
-    <div class="faq-list">
-      <div class="faq-item open">
-        <button class="faq-q"><span>Tôi không có bảng lương, có vay được không?</span><i class="ti ti-chevron-down"></i></button>
-        <div class="faq-a"><div class="faq-a-inner">Có. Bạn chỉ cần CMND/CCCD rõ nét và số điện thoại chính chủ. Các đối tác của chúng tôi hỗ trợ tốt cho lao động tự do, tài xế công nghệ, freelancer.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q"><span>Tôi từng có nợ xấu, có vay được không?</span><i class="ti ti-chevron-down"></i></button>
-        <div class="faq-a"><div class="faq-a-inner">Tùy mức độ và đối tác. Hãy đăng ký cả 4 gói, nếu không được thì liên hệ nhóm zalo bên dưới</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q"><span>Hạn mức vay tối đa là bao nhiêu?</span><i class="ti ti-chevron-down"></i></button>
-        <div class="faq-a"><div class="faq-a-inner">Từ 500.000đ đến 100.000.000đ, tùy theo hồ sơ và đối tác cho vay.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q"><span>Nếu hồ sơ bị từ chối thì sao?</span><i class="ti ti-chevron-down"></i></button>
-        <div class="faq-a"><div class="faq-a-inner">Hãy đăng ký cả 4 gói, nếu không được thì liên hệ với chúng tôi qua nhóm Zalo ở dưới</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q"><span>Tôi gặp lỗi khi đăng ký, liên hệ ở đâu?</span><i class="ti ti-chevron-down"></i></button>
-        <div class="faq-a"><div class="faq-a-inner">Tham gia nhóm Zalo hoặc Telegram hỗ trợ 24/7 ở cuối trang để được hướng dẫn chi tiết.</div></div>
-      </div>
+    <div style="margin-top:24px;">
+      <details>
+        <summary>Hạn mức vay tối đa là bao nhiêu?</summary>
+        <p>Từ 500.000đ đến 100.000.000đ – tùy hồ sơ và từng app đối tác. Xem chi tiết từng app ở phần so sánh phía trên.</p>
+      </details>
+      <details>
+        <summary>Tôi không có bảng lương có vay được không?</summary>
+        <p>Một số app đối tác không yêu cầu bảng lương, chỉ cần CCCD/CMND rõ nét và số điện thoại chính chủ. Điều kiện cụ thể tùy từng app, bạn có thể xem ở phần so sánh phía trên.</p>
+      </details>
+      <details>
+        <summary>Tôi đang có khoản vay khác hoặc từng bị từ chối, có thể vay được không?</summary>
+        <p>Bạn có thể thử Binixo — đây là nền tảng so sánh nhiều đối tác cùng lúc, phù hợp hơn với hồ sơ đang có khoản vay khác hoặc từng bị từ chối ở nơi khác, giúp tăng khả năng tìm được nơi phù hợp. Điều này không đồng nghĩa với việc chắc chắn được duyệt.</p>
+      </details>
+      <details>
+        <summary>Nếu hồ sơ bị từ chối thì sao?</summary>
+        <p>Bạn có thể thử đăng ký thêm ở app khác trong danh sách so sánh phía trên — mỗi app có tiêu chí xét duyệt riêng.</p>
+      </details>
+      <details>
+        <summary>Đăng ký nhiều app một lúc có sao không?</summary>
+        <p>Nếu nhiều app cùng được duyệt, bạn có thể chọn vay ở một hoặc nhiều app tùy nhu cầu. Các app còn lại bạn có thể từ chối vay mà không ảnh hưởng gì.</p>
+      </details>
+      <details>
+        <summary>Tôi gặp lỗi khi đăng ký thì liên hệ ở đâu?</summary>
+        <p>Tham gia nhóm Zalo hoặc Telegram hỗ trợ ở cuối trang để được hướng dẫn chi tiết.</p>
+      </details>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="guide-section">
-    <h2>Cẩm nang vay thành công</h2>
-    <p class="sub">Mở rộng từng mục để xem chi tiết</p>
-
-    <div class="acc-item">
-      <button class="acc-head"><div class="acc-icon"><i class="ti ti-bolt"></i></div><span class="acc-title">1. Đăng ký vay "hiệu quả"</span><i class="ti ti-chevron-down"></i></button>
-      <div class="acc-body"><ul class="acc-body-inner">
-        <li>Đăng ký cả 4 gói vay để tăng tỷ lệ duyệt thành công</li>
-        <li>Hồ sơ gói vay nào bị rớt có thể đăng ký lại sau 7 ngày</li>
-        <li>Điền mức vay 1tr đến 2tr lần đầu vay</li>
-        <li>Đăng ký trực tiếp tại trang này để tránh trang giả mạo</li>
-      </ul></div>
+<!-- ============ CTA CUỐI + CỘNG ĐỒNG ============ -->
+<section class="cta-final">
+  <div class="wrap">
+    <h2>Tham gia nhóm trao đổi và hỗ trợ miễn phí</h2>
+    <p>Nhận hỗ trợ nhanh — cập nhật thông tin mới mỗi ngày.</p>
+    <a href="#so-sanh" class="btn btn-primary" style="margin-bottom:8px;">ĐĂNG KÝ MIỄN PHÍ NGAY</a>
+    <div class="community">
+      <a href="https://zalo.me/g/flnvnf397" target="_blank" rel="noopener" class="btn btn-outline" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.4);">Nhóm Zalo</a>
     </div>
+  </div>
+</section>
 
-    <div class="acc-item">
-      <button class="acc-head"><div class="acc-icon"><i class="ti ti-file-text"></i></div><span class="acc-title">2. Chuẩn bị thông tin vay</span><i class="ti ti-chevron-down"></i></button>
-      <div class="acc-body"><ul class="acc-body-inner">
-        <li>Nên dùng CCCD và Số điện thoại chính chủ để đăng ký, không dùng CMND cũ và sim rác đăng ký</li>
-        <li>Lương để auto trên 10 triệu</li>
-        <li>Công việc chọn nhân viên văn phòng, kế toán...</li>
-        <li>Mức chi tiêu 4 triệu</li>
-        <li>Số tham chiếu điền ảo</li>
-        <li>Địa chỉ công ty lên google chọn công ty gần nhà là được</li>
-      </ul></div>
-    </div>
-
-    <div class="acc-item">
-      <button class="acc-head"><div class="acc-icon"><i class="ti ti-camera"></i></div><span class="acc-title">3. Chuẩn bị ảnh hồ sơ rõ nét</span><i class="ti ti-chevron-down"></i></button>
-      <div class="acc-body"><ul class="acc-body-inner">
-        <li>Ảnh CCCD rõ mặt, đủ sáng, không mờ/chói</li>
-        <li>Ảnh chân dung rõ nét, không cắt góc</li>
-        <li>Tránh chụp lại qua màn hình hoặc dùng ảnh cũ</li>
-      </ul></div>
-    </div>
-
-    <div class="acc-item">
-      <button class="acc-head"><div class="acc-icon warn"><i class="ti ti-alert-triangle"></i></div><span class="acc-title">4. Lưu ý quan trọng</span><i class="ti ti-chevron-down"></i></button>
-      <div class="acc-body"><ul class="acc-body-inner">
-        <li>Không click vào quảng cáo mời vay qua email/tin nhắn lạ</li>
-        <li>Không tải app ngoài Google Play/App Store để tránh rủi ro bảo mật</li>
-        <li>Gặp khó khăn? Liên hệ Zalo/Telegram hỗ trợ 24/7 ở cuối trang</li>
-      </ul></div>
-    </div>
-  </section>
-
-  <section class="final-section">
-    <div class="final-clock">
-      <div class="clock-face" style="width:108px; height:108px;">
-        <div class="clock-inner">
-          <i class="ti ti-rosette-discount-check" style="font-size:36px; color:var(--teal-500);"></i>
-        </div>
-      </div>
-    </div>
-    <h2>Đừng bỏ lỡ cơ hội<br>được duyệt trong 5 phút</h2>
-    <p>Hơn 5.000 người đã nhận khoản vay thành công trong tháng này. Bạn có thể là người tiếp theo.</p>
-    <a href="#sosanh" class="btn btn-primary"><i class="ti ti-bolt"></i> Đăng ký miễn phí ngay</a>
-    <p class="caption on-dark">Đăng ký nhanh &mdash; Duyệt sau 5 phút &mdash; Không phí ẩn</p>
-  </section>
-
-  <section class="community-section">
-    <h2>Tham gia nhóm hỗ trợ miễn phí</h2>
-    <p class="sub">Nhận hỗ trợ nhanh &mdash; cập nhật ưu đãi mới mỗi ngày</p>
-    <a href="https://zalo.me/g/flnvnf397" class="group-btn">
-      <div class="group-icon zalo"><i class="ti ti-brand-zalo"></i></div>
-      Nhóm Zalo
-      <i class="ti ti-arrow-right"></i>
-    </a>
-  </section>
-
-  <footer>
-    <div class="footer-disclosure">
-      Vay Nhanh 24h là nền tảng giới thiệu và liên kết các sản phẩm tài chính từ đối tác được cấp phép. Chúng tôi không trực tiếp thẩm định hoặc cho vay.
-    </div>
-    <div class="footer-contact" style="margin-bottom:24px;">
-<!-- Thêm thẻ div bao bọc có style căn lề trái ở đây -->
-<div style="text-align: left; display: inline-block; max-width: 100%;">
-    <p><span style="color: #2de2b4; margin-right: 10px;">📍</span> 58 Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội</p>
-    <p><span style="color: #2de2b4; margin-right: 10px;">📞</span> Hotline: 0329 910 712</p>
-    <p><span style="color: #2de2b4; margin-right: 10px;">✉</span> hotro@vaynhanh24h.biz</p>
-    <p><span style="color: #2de2b4; margin-right: 10px;">🌐</span> vaynhanh24h.biz</p>
-</div>
-    </div>
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
     <div class="footer-grid">
-      <div class="footer-col">
-        <h4>Chính sách</h4>
-        <div>Hướng dẫn đăng ký khoản vay</div>
-        <div>Chính sách bảo mật thông tin</div>
-        <div>Điều khoản sử dụng</div>
-        <div>Câu hỏi thường gặp</div>
+      <div>
+        <h4>Thông tin liên hệ</h4>
+        <ul>
+          <li>Website: vaynhanh24h.biz</li>
+          <li>Email: hotro@vaynhanh24h.biz</li>
+          <li>Hotline: 0329 910 711</li>
+          <li>58 Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội</li>
+        </ul>
       </div>
-      <div class="footer-col">
+      <div>
+        <h4>Chính sách</h4>
+        <ul>
+          <li><a href="#huong-dan">Hướng dẫn đăng ký khoản vay</a></li>
+          <li><a href="#">Điều khoản sử dụng</a></li>
+          <li><a href="#faq">Câu hỏi thường gặp</a></li>
+          <li><a href="#">Chính sách bảo mật thông tin</a></li>
+        </ul>
+      </div>
+      <div>
         <h4>Đối tác</h4>
-        <div>Dong247</div>
-        <div>Binixo</div>
-        <div>NiceCredit</div>
-        <div>Vaymeo</div>
-        <div>MoneyVeo</div>
-        <div>VayVND</div>
+        <ul>
+          <li>Creditnice</li>
+          <li>Dong247</li>
+          <li>Money Veo</li>
+          <li>Binixo</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Pháp lý</h4>
+        <ul>
+          <li>Trang giới thiệu đối tác, không phải tổ chức tín dụng</li>
+          <li>Khoản vay phụ thuộc điều khoản của từng đối tác</li>
+          <li>Vui lòng vay có trách nhiệm</li>
+        </ul>
       </div>
     </div>
-    <div class="footer-bottom">© 2026 vaynhanh24h.biz &mdash; Mọi quyền được bảo lưu</div>
-  </footer>
+    <div class="footer-note">
+      © 2026 VayNhanh24h.biz — Trang giới thiệu đối tác tài chính, không phải tổ chức tín dụng. Mọi thông tin về hạn mức, lãi suất, điều kiện xét duyệt do từng app đối tác cung cấp và có thể thay đổi.
+    </div>
+  </div>
+</footer>
 
+<!-- Thanh CTA dính đáy cho mobile -->
+<div class="mobile-cta-bar">
+  <a href="tel:0329910711" class="mobile-cta-call" aria-label="Gọi hotline">📞</a>
+  <a href="#so-sanh" class="btn btn-primary">ĐĂNG KÝ VAY NGAY</a>
 </div>
-
-<script>
-document.querySelectorAll('.faq-q').forEach(function(btn){
-  btn.addEventListener('click', function(){
-    var item = btn.closest('.faq-item');
-    var wasOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); });
-    if(!wasOpen) item.classList.add('open');
-  });
-});
-document.querySelectorAll('.acc-head').forEach(function(btn){
-  btn.addEventListener('click', function(){
-    var item = btn.closest('.acc-item');
-    var wasOpen = item.classList.contains('open');
-    document.querySelectorAll('.acc-item').forEach(function(i){ i.classList.remove('open'); });
-    if(!wasOpen) item.classList.add('open');
-  });
-});
-</script>
 
 </body>
 </html>

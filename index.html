@@ -113,6 +113,7 @@
     background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);
     padding:22px;display:flex;flex-direction:column;gap:12px;border:1px solid var(--gray-300);
     position:relative;
+    scroll-margin-top:90px; /* bù trừ header sticky khi nhảy anchor (#creditnice, #dong247, #moneyveo, #binixo) */
   }
   .card .app-name{font-size:19px;font-weight:800;color:var(--blue-900);}
   .card .tag{
@@ -246,7 +247,7 @@
 
     <div class="cards">
       <!-- Creditnice -->
-      <div class="card">
+      <div class="card" id="creditnice">
         <span class="tag">Hồ sơ sạch · Vay nhỏ</span>
         <div class="app-name">Creditnice</div>
         <dl>
@@ -259,7 +260,7 @@
       </div>
 
       <!-- Dong247 -->
-      <div class="card">
+      <div class="card" id="dong247">
         <span class="tag">Nền tảng so sánh</span>
         <div class="app-name">Dong247</div>
         <dl>
@@ -272,7 +273,7 @@
       </div>
 
       <!-- Money Veo -->
-      <div class="card">
+      <div class="card" id="moneyveo">
         <span class="tag">Hồ sơ sạch · Vay vừa</span>
         <div class="app-name">Money Veo</div>
         <dl>
@@ -285,7 +286,7 @@
       </div>
 
       <!-- Binixo -->
-      <div class="card">
+      <div class="card" id="binixo">
         <span class="tag">Đang có khoản vay khác / từng bị từ chối</span>
         <div class="app-name">Binixo</div>
         <dl>

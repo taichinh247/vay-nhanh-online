@@ -323,5 +323,28 @@
   <a href="#danh-sach" class="btn btn-primary">XEM GÓI VAY NGAY</a>
 </div>
 
+
+<script>
+(function(){
+  var params = new URLSearchParams(window.location.search);
+  var fp = params.get('fp');
+  if (fp) {
+    try { localStorage.setItem('fp_source', fp); } catch(e){}
+  } else {
+    try { fp = localStorage.getItem('fp_source'); } catch(e){}
+  }
+  if (!fp) return;
+  fp = fp.replace(/[^a-zA-Z0-9_-]/g,'').slice(0,40);
+  document.querySelectorAll('.app-row a.btn').forEach(function(a){
+    try {
+      var url = new URL(a.href);
+      if (url.hostname === 'go.dinos.click') url.searchParams.set('sub_id1', fp);
+      else if (url.hostname === 'tracking.mobivision.vn') url.searchParams.set('sub_id', fp);
+      a.href = url.toString();
+    } catch(e){}
+  });
+})();
+</script>
+
 </body>
 </html>

@@ -11,6 +11,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?hfamily=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) — GA4, thêm 19/09/2026 để theo dõi traffic landing theo mã fp -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRXZX5YC07"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SRXZX5YC07');
+</script>
 <style>
   :root{
     --blue-900:#0B2559;
@@ -219,7 +227,7 @@
         <p class="detail">Hạn mức 500.000 – 100.000.000đ · 0% lãi khoản vay đầu ≤10 triệu · từ 21 tuổi, cần CCCD + thẻ ngân hàng. Phù hợp người vay tiền gấp số nhỏ, chưa từng vay app nào.</p>
         <a href="https://go.dinos.click/click?a=1326&o=990" target="_blank" rel="noopener sponsored" class="btn btn-primary btn-block">ĐĂNG KÝ NGAY</a>
       </div>
-      
+
       <!-- Cashspace -->
       <div class="app-row" id="cashspace">
         <div class="app-row-top">
@@ -229,7 +237,7 @@
         <p class="detail">Hạn mức 500.000 – 20.000.000đ · lãi suất 0% – 18%/năm, ưu đãi 0% cho khách hàng mới · 23–60 tuổi. Phù hợp người vay tiền mặt hạn mức nhỏ, ưu tiên lãi suất thấp.</p>
         <a href="https://tracking.mobivision.vn/click?a=360&o=66" target="_blank" rel="noopener sponsored" class="btn btn-primary btn-block">XEM CHI TIẾT &amp; ĐĂNG KÝ</a>
       </div>
-      
+
       <!-- Dong247 -->
       <div class="app-row" id="dong247">
         <div class="app-row-top">
@@ -342,6 +350,15 @@
   }
   if (!fp) return;
   fp = fp.replace(/[^a-zA-Z0-9_-]/g,'').slice(0,40);
+  // Gửi mã fp sang GA4: set làm tham số mặc định cho MỌI event sau đó (kể cả các
+  // event "click" tự động của Enhanced measurement khi khách bấm nút app), + bắn
+  // riêng 1 event "fp_landing" để đếm số lượt landing hợp lệ theo từng fp.
+  try {
+    if (window.gtag) {
+      gtag('set', {'fp_source': fp});
+      gtag('event', 'fp_landing', {'fp_source': fp});
+    }
+  } catch(e){}
   document.querySelectorAll('.app-row a.btn').forEach(function(a){
     try {
       var url = new URL(a.href);
